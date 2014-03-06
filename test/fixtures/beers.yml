@@ -7,25 +7,25 @@
 
 guinness:
   name: Guinness
-  country: Ireland
-  style: Stout
-  brewer: Guinness
-  
+  country: ireland
+  style: stout
+  brewer: guinness
+
 mongoose_ipa:
   name: Mongoose IPA
-  style: IPA
-  brewer: Hale's Ales
-  country: USA
+  style: ipa
+  brewer: hales_ales
+  country: usa
 
 heineken:
   name: Heineken
-  style: Lager
-  brewer: Heineken International
-  country: Netherlands
+  style: lager
+  brewer: heineken
+  country: netherlands
 
 corona:
   name: Corona
-  style: Lager
+  style: lager
   brewer:  Cervecería Modelo
   country: Mexico
 
