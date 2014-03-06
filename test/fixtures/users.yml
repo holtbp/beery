@@ -4,8 +4,42 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+
+brett:
+  id: 1
+  name: Brett Holt
+  email: brett@newrelic.com
+  age: 26
+  gender: male
+  location: 1
+
+brian:
+  id: 2
+  name: Brian Delahunty
+  email: bdelahunty@newrelic.com
+  age: 33
+  gender: male
+  location: 2
+
+jason:
+  id: 3
+  name: Jason Stenhouse
+  email: jstenhouse@newrelic.com
+  age: 27
+  gender: male
+  location: 3
+
+randy:
+  id: 4
+  name: Randy Antler
+  email: randyantler@gmail.com
+  age: 47
+  gender: male
+  location: 4
+
+steve:
+  name: Steve M'fuckin' Jobs
+  email: steve@apple.com
+  age: 68
+  gender: male
+  location: 5

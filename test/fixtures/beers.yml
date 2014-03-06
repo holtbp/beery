@@ -4,8 +4,69 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+
+guinness:
+  name: Guinness
+  country: Ireland
+  style: Stout
+  brewer: Guinness
+  
+mongoose_ipa:
+  name: Mongoose IPA
+  style: IPA
+  brewer: Hale's Ales
+  country: USA
+
+heineken:
+  name: Heineken
+  style: Lager
+  brewer: Heineken International
+  country: Netherlands
+
+corona:
+  name: Corona
+  style: Lager
+  brewer:  Cervecería Modelo
+  country: Mexico
+
+irish_death:
+  name: Irish Death
+  style: Ale
+  brewer: Iron Horse Brewery
+  country: USA
+
+black_butte:
+  name: Black Butte
+  style: Porter
+  brewer: Deschutes Brewery
+  country: USA
+
+pacifico:
+  name: Pacífico
+  style: Pilsner
+  brewer:  Cervecería Modelo
+  country: Mexico
+
+universale_pale:
+  name: Universale Pale
+  style: Pale ale
+  brewer: Fremont Brewing Co.
+  country: USA
+
+obsidian_stout:
+  name: Obsidian Stout
+  style: Stout
+  brewer: Deschutes Brewery
+  country: USA
+
+vlad_the_impaler:
+  name: Vlad the Imp Aler
+  style: American Wild Ale
+  brewer: Cascade Brewery
+  country: USA
+
+amber_ale:
+  name: African Amber
+  style: American Amber/Red Ale
+  brewer: Mac & Jack's Brewery
+  country: USA
