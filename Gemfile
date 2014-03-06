@@ -45,3 +45,6 @@ gem 'angularjs-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'jazz_hands'
+
