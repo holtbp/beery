@@ -32,13 +32,6 @@ ActiveRecord::Schema.define(version: 20140306053159) do
     t.datetime "updated_at"
   end
 
-  create_table "brewers_locations", force: true do |t|
-    t.integer  "location_id"
-    t.integer  "brewer_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "countries", force: true do |t|
     t.string   "name"
     t.string   "iso_code"
@@ -66,14 +59,7 @@ ActiveRecord::Schema.define(version: 20140306053159) do
     t.string   "email"
     t.string   "age"
     t.string   "gender"
-    t.string   "location"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users_beers", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "beer_id"
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
