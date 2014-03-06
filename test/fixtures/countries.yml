@@ -4,9 +4,22 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
+
+germany:
+  name: Germany
+  iso_code: de
+
 ireland:
   name: Ireland
   iso_code: ir
+
+mexico:
+  name: Mexico
+  iso_code: mx
+
+netherlands:
+  name: Netherlands
+  iso_code: nl
 
 usa:
   name: USA
