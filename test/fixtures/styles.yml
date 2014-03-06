@@ -21,3 +21,21 @@ hales_ales:
 
 lager:
   name: Lager
+
+ale:
+  name: Ale
+
+porter:
+  name: Porter
+
+pilsner:
+  name: Pilsner
+
+pale_ale:
+  name: Pale ale
+
+american_wild_ale:
+  name: American Wild Ale
+
+american_amber_red_ale:
+  name: American Amber/Red Ale

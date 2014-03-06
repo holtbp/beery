@@ -9,3 +9,21 @@ guinness:
 
 anheuser_busch:
   name: Anheuser-Busch
+
+cerveceria_model:
+  name: Cervecería Modelo
+
+iron_horse:
+  name: Iron Horse Brewery
+
+deschutes:
+  name: Deschutes Brewery
+
+fremont_brewer:
+  name: Fremont Brewing Co.
+
+cascade_brewery:
+  name: Cascade Brewery
+
+mac_and_jacks_brewery:
+  name: Mac and Jack's Brewery

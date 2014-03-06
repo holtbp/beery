@@ -12,7 +12,7 @@ brett:
   longitude: -122.345803
   city: Seattle
   state: WA
-  country: USA
+  country: usa
 
 brian:
   id: 2
@@ -21,7 +21,7 @@ brian:
   longitude: -122.350046
   city: Seattle
   state: WA
-  country: USA
+  country: usa
 
 jason:
   id: 3
@@ -30,7 +30,7 @@ jason:
   longitude: -122.300171
   city: Seattle
   state: WA
-  country: USA
+  country: usa
 
 randy:
   id: 4
@@ -39,7 +39,7 @@ randy:
   longitude: -122.378602
   city: Seattle
   state: WA
-  country: USA
+  country: usa
 
 steve:
   id: 5
@@ -48,4 +48,4 @@ steve:
   longitude: -122.030743
   city: Cupertino
   state: CA
-  country: USA
+  country: usa

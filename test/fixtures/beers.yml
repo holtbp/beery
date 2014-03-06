@@ -26,47 +26,47 @@ heineken:
 corona:
   name: Corona
   style: lager
-  brewer:  Cervecería Modelo
+  brewer: cerveceria_modelo
   country: Mexico
 
 irish_death:
   name: Irish Death
-  style: Ale
-  brewer: Iron Horse Brewery
+  style: ale
+  brewer: iron_horse
   country: USA
 
 black_butte:
   name: Black Butte
-  style: Porter
-  brewer: Deschutes Brewery
+  style: porter
+  brewer: deschutes
   country: USA
 
 pacifico:
   name: Pacífico
-  style: Pilsner
-  brewer:  Cervecería Modelo
+  style: pilsner
+  brewer: cerveceria_modelo
   country: Mexico
 
 universale_pale:
   name: Universale Pale
-  style: Pale ale
-  brewer: Fremont Brewing Co.
+  style: pale_ale
+  brewer: fremont_brewing
   country: USA
 
 obsidian_stout:
   name: Obsidian Stout
-  style: Stout
-  brewer: Deschutes Brewery
+  style: stout
+  brewer: deschutes
   country: USA
 
 vlad_the_impaler:
   name: Vlad the Imp Aler
-  style: American Wild Ale
-  brewer: Cascade Brewery
+  style: american_wild_ale
+  brewer: cascade_brewery
   country: USA
 
 amber_ale:
   name: African Amber
-  style: American Amber/Red Ale
-  brewer: Mac & Jack's Brewery
+  style: american_amber_red_ale
+  brewer: mac_and_jacks_brewery
   country: USA

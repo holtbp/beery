@@ -4,7 +4,10 @@ class CreateLocations < ActiveRecord::Migration
       t.string :name
       t.string :latitude
       t.string :longitude
+      t.string :city
+      t.string :state
       t.string :metadata
+      t.integer :country_id
 
       t.timestamps
     end

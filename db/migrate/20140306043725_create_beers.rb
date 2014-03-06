@@ -3,7 +3,9 @@ class CreateBeers < ActiveRecord::Migration
     create_table :beers do |t|
       t.integer :brewer_id
       t.integer :style_id
-      t.name
+      t.integer :country_id
+      t.string :name
+
       t.timestamps
     end
   end
