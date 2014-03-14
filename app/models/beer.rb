@@ -17,4 +17,6 @@ class Beer < ActiveRecord::Base
   belongs_to :country
   has_many :users, :through => :beers_user
   has_many :beers_user
+
+  validates :name, presence: true
 end
