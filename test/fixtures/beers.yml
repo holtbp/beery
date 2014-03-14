@@ -27,46 +27,46 @@ corona:
   name: Corona
   style: lager
   brewer: cerveceria_modelo
-  country: Mexico
+  country: mexico
 
 irish_death:
   name: Irish Death
   style: ale
   brewer: iron_horse
-  country: USA
+  country: usa
 
 black_butte:
   name: Black Butte
   style: porter
   brewer: deschutes
-  country: USA
+  country: usa
 
 pacifico:
   name: Pacífico
   style: pilsner
   brewer: cerveceria_modelo
-  country: Mexico
+  country: mexico
 
 universale_pale:
   name: Universale Pale
   style: pale_ale
   brewer: fremont_brewing
-  country: USA
+  country: usa
 
 obsidian_stout:
   name: Obsidian Stout
   style: stout
   brewer: deschutes
-  country: USA
+  country: usa
 
 vlad_the_impaler:
   name: Vlad the Imp Aler
   style: american_wild_ale
   brewer: cascade_brewery
-  country: USA
+  country: usa
 
 amber_ale:
   name: African Amber
   style: american_amber_red_ale
   brewer: mac_and_jacks_brewery
-  country: USA
+  country: usa

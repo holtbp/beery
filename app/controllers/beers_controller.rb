@@ -5,11 +5,19 @@ class BeersController < ApplicationController
   # GET /beers.json
   def index
     @beers = Beer.all
+    respond_to do |format|
+      format.html { render nothing: true }
+      format.json { render json: @beers.to_json }
+    end
   end
 
   # GET /beers/1
   # GET /beers/1.json
   def show
+    respond_to do |format|
+      format.html { render nothing: true }
+      format.json { render json: @beer.to_json }
+    end
   end
 
   # GET /beers/new

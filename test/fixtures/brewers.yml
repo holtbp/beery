@@ -10,7 +10,7 @@ guinness:
 anheuser_busch:
   name: Anheuser-Busch
 
-cerveceria_model:
+cerveceria_modelo:
   name: Cervecería Modelo
 
 iron_horse:
@@ -19,7 +19,13 @@ iron_horse:
 deschutes:
   name: Deschutes Brewery
 
-fremont_brewer:
+hales_ales:
+  name: Hale's Ales
+
+heineken:
+  name: Heineken Brewing
+
+fremont_brewing:
   name: Fremont Brewing Co.
 
 cascade_brewery:
