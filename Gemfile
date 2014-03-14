@@ -34,6 +34,8 @@ end
 
 gem 'angularjs-rails'
 
+gem 'annotate', '~> 2.6.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
