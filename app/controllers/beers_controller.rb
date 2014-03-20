@@ -23,17 +23,27 @@ class BeersController < ApplicationController
   # GET /beers/new
   def new
     @beer = Beer.new
+
+    respond_to do |format|
+      format.html { render nothing: true }
+      format.json { render json: @beer.to_json }
+    end
   end
 
   # GET /beers/1/edit
   def edit
+    @beer = Beer.find(params[:id])
+
+    respond_to do |format|
+      format.html { render nothing: true }
+      format.json { render json: @beer.to_json }
+    end
   end
 
   # POST /beers
   # POST /beers.json
   def create
     @beer = Beer.new(beer_params)
-    puts @beer.inspect
 
     respond_to do |format|
       if @beer.save

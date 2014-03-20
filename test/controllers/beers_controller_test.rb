@@ -18,8 +18,8 @@ class BeersControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    #get :new, format: :json
-    #assert_response :success
+    get :new, format: :json
+    assert_response :success
   end
 
   test "should create beer" do
@@ -31,13 +31,14 @@ class BeersControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
-    #get :edit, id: @beer
-    #assert_response :success
+    get :edit, id: @beer
+    assert_response :success
   end
 
   test "should update beer" do
-    #patch :update, id: @beer, beer: {  }
-    #assert_redirected_to beer_path(assigns(:beer))
+    patch :update, id: @beer, beer: { name: 'new beer name'  }
+    assert_redirected_to beer_path(assigns(:beer))
+    assert_equal 'new beer name', assigns(:beer).name
   end
 
   test "should destroy beer" do
