@@ -1,2 +1,14 @@
 %a{:sref => "'beers'"} Beers
 %h1 {{beer.name}}
+.field
+  .style
+    %strong Style:
+    {{ beer.style.name }}
+.field
+  .style
+    %strong Brewer:
+    {{ beer.brewer.name }}
+.field
+  .style
+    %strong Country:
+    {{ beer.country.name }}
