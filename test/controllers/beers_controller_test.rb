@@ -23,11 +23,11 @@ class BeersControllerTest < ActionController::TestCase
   end
 
   test "should create beer" do
-    #assert_difference('Beer.count') do
-    #  post :create, beer: {  }
-    #end
-    #
-    #assert_redirected_to beer_path(assigns(:beer))
+    assert_difference('Beer.count') do
+     post :create, beer: { name: 'beer name' }
+    end
+
+    assert_redirected_to beer_path(assigns(:beer))
   end
 
   test "should get edit" do
@@ -41,10 +41,10 @@ class BeersControllerTest < ActionController::TestCase
   end
 
   test "should destroy beer" do
-    #assert_difference('Beer.count', -1) do
-    #  delete :destroy, id: @beer
-    #end
-    #
-    #assert_redirected_to beers_path
+    assert_difference('Beer.count', -1) do
+     delete :destroy, id: @beer
+    end
+
+    assert_redirected_to beers_path
   end
 end
