@@ -6,7 +6,6 @@ class BeersController < ApplicationController
   def index
     @beers = Beer.all
     respond_to do |format|
-      format.html { render nothing: true }
       format.json { render json: @beers.to_json }
     end
   end
@@ -15,7 +14,6 @@ class BeersController < ApplicationController
   # GET /beers/1.json
   def show
     respond_to do |format|
-      format.html { render nothing: true }
       format.json { render json: @beer.to_json }
     end
   end
@@ -25,7 +23,6 @@ class BeersController < ApplicationController
     @beer = Beer.new
 
     respond_to do |format|
-      format.html { render nothing: true }
       format.json { render json: @beer.to_json }
     end
   end
@@ -35,7 +32,6 @@ class BeersController < ApplicationController
     @beer = Beer.find(params[:id])
 
     respond_to do |format|
-      format.html { render nothing: true }
       format.json { render json: @beer.to_json }
     end
   end
@@ -47,10 +43,8 @@ class BeersController < ApplicationController
 
     respond_to do |format|
       if @beer.save
-        format.html { redirect_to @beer, notice: 'Beer was successfully created.' }
         format.json { render action: 'show', status: :created, location: @beer }
       else
-        format.html { render action: 'new' }
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
     end
@@ -61,10 +55,8 @@ class BeersController < ApplicationController
   def update
     respond_to do |format|
       if @beer.update(beer_params)
-        format.html { redirect_to @beer, notice: 'Beer was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
     end
@@ -75,7 +67,6 @@ class BeersController < ApplicationController
   def destroy
     @beer.destroy
     respond_to do |format|
-      format.html { redirect_to beers_url }
       format.json { head :no_content }
     end
   end
