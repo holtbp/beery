@@ -19,4 +19,12 @@ class Beer < ActiveRecord::Base
   has_many :beers_user
 
   validates :name, presence: true
+
+  def as_json(options = {})
+    json = super(options)
+    json[:brewer] = brewer if brewer.present?
+    json[:style] = style if style.present?
+    json[:country] = country if country.present?
+    json
+  end
 end

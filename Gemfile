@@ -34,8 +34,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'angularjs-rails'
-
 gem 'annotate', '~> 2.6.2'
 
 # Use ActiveModel has_secure_password
