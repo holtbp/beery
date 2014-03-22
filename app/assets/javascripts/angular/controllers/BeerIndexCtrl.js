@@ -1,10 +1,7 @@
-beery.controller('BeerIndexCtrl', ['$scope', '$location', '$http', function($scope, $location, $http) {
+beery.controller('BeerIndexCtrl', ['$scope', '$http', 'nav', function($scope, $http, nav) {
   $scope.beers = [];
   $http.get('./beers.json').success(function(data) {
     $scope.beers = data;
   });
-
-  $scope.viewBeer = function(id) {
-    $location.url('/beers/'+id);
-  };
+  $scope.nav = nav;
 }]);

@@ -1,4 +1,4 @@
-%a{:href => "/#"}
+%a{:'ng-click' => "nav.viewHome()"}
   ="Home"
 %table
   %thead
@@ -13,7 +13,7 @@
         %strong Country
   %tr{:'ng-repeat' => "beer in beers"}
     %td.name
-      %a{:'ng-click' => "viewBeer(beer.id)"}
+      %a{:'ng-click' => "nav.viewBeer(beer.id)"}
         {{ beer.name }}
     %td.brewer {{ beer.brewer.name }}
     %td.style {{ beer.style.name }}

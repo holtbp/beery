@@ -1,8 +1,8 @@
 %h1 {{title}}
 %ul
   %li
-    %a{:href => '/#/beers'} Beers
+    %a{:'ng-click' => 'nav.viewBeers()'} Beers
   %li
-    %a{:href => '/#/users'} Users
+    %a{:'ng-click' => 'nav.viewUsers()'} Users
   %li
-    %a{:href => '/#/brewers'} Brewers
+    %a{:'ng-click' => 'nav.viewBrewers()'} Brewers
