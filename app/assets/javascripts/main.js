@@ -18,4 +18,32 @@ window.beery = angular.module('beery', ['ngRoute']).
         templateUrl: '/assets/templates/beers/show.html',
         controller: 'BeerShowCtrl'
       });
-    }]);
+    }]).
+  factory('nav', ['$location', function($location) {
+    return {
+      viewHome: function() {
+        $location.url('/');
+      },
+      viewBeer: function(id) {
+        $location.url('/beers/' + id);
+      },
+      viewBeers: function() {
+        $location.url('/beers/');
+      },
+      viewNewBeer: function() {
+        $location.url('/brewer');
+      },
+      viewBrewer: function(id) {
+        $location.url('/brewers/' + id);
+      },
+      viewBrewers: function() {
+        $location.url('/brewers');
+      },
+      viewNewBrewer: function() {
+        $location.url('/brewer');
+      },
+      viewUsers: function() {
+        $location.url('/users');
+      }
+    };
+  }]);
