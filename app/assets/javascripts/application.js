@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular.min
+//= require angular-routing.min
 //= require main
 //= require_tree .
