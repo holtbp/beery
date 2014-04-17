@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def enforce_json_requests
     unless params[:format] == 'json'
-      return render :nothing => true, :status => 400
+      return render text: "Only JSON requests are accepted.", status: 400
     end
   end
 

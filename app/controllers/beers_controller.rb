@@ -5,35 +5,25 @@ class BeersController < ApplicationController
   # GET /beers.json
   def index
     @beers = Beer.all
-    respond_to do |format|
-      format.json { render json: @beers.to_json }
-    end
+    render json: @beers.to_json
   end
 
   # GET /beers/1
   # GET /beers/1.json
   def show
-    respond_to do |format|
-      format.json { render json: @beer.to_json }
-    end
+    render json: @beer.to_json
   end
 
   # GET /beers/new
   def new
     @beer = Beer.new
-
-    respond_to do |format|
-      format.json { render json: @beer.to_json }
-    end
+    render json: @beer.to_json
   end
 
   # GET /beers/1/edit
   def edit
     @beer = Beer.find(params[:id])
-
-    respond_to do |format|
-      format.json { render json: @beer.to_json }
-    end
+    render json: @beer.to_json
   end
 
   # POST /beers
@@ -41,24 +31,20 @@ class BeersController < ApplicationController
   def create
     @beer = Beer.new(beer_params)
 
-    respond_to do |format|
-      if @beer.save
-        format.json { render action: 'show', status: :created, location: @beer }
-      else
-        format.json { render json: @beer.errors, status: :unprocessable_entity }
-      end
+    if @beer.save
+      render action: 'show', status: :created, location: @beer
+    else
+      render json: @beer.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /beers/1
   # PATCH/PUT /beers/1.json
   def update
-    respond_to do |format|
-      if @beer.update(beer_params)
-        format.json { head :no_content }
-      else
-        format.json { render json: @beer.errors, status: :unprocessable_entity }
-      end
+    if @beer.update(beer_params)
+      head :no_content
+    else
+      render json: @beer.errors, status: :unprocessable_entity
     end
   end
 
@@ -66,9 +52,7 @@ class BeersController < ApplicationController
   # DELETE /beers/1.json
   def destroy
     @beer.destroy
-    respond_to do |format|
-      format.json { head :no_content }
-    end
+    head :no_content
   end
 
   private
